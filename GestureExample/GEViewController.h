@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GEViewController : UIViewController
+@interface GEViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (retain, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

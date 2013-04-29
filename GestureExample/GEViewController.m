@@ -15,6 +15,8 @@
 @implementation GEViewController
 @synthesize imageView;
 
+#pragma mark - View Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,6 +34,11 @@
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected:)];
     tapRecognizer.numberOfTapsRequired = 2;
     [self.imageView addGestureRecognizer:tapRecognizer];
+    panRecognizer.delegate=self;
+    pinchRecognizer .delegate=self;
+    rotationRecognizer.delegate=self;
+    // The delegate for the tapRecognizer is not required
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +61,7 @@
     }
 }
 
-#pragma mark - Gesture Recognizers
+#pragma mark - Gesture Recognizers Method
 
 - (void)panDetected:(UIPanGestureRecognizer *)panRecognizer
 {
@@ -87,6 +94,13 @@
         self.imageView.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
         self.imageView.transform = CGAffineTransformIdentity;
     }];
+}
+
+#pragma mark - Delegate Method
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
 }
 
 @end
