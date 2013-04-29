@@ -18,6 +18,7 @@
 		CA1EDED6172E87320041F716 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1EDED5172E87320041F716 /* Default-568h@2x.png */; };
 		CA1EDED9172E87320041F716 /* GEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1EDED8172E87320041F716 /* GEViewController.m */; };
 		CA1EDEDC172E87320041F716 /* GEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1EDEDA172E87320041F716 /* GEViewController.xib */; };
+		CA1EDEF6172E90F70041F716 /* humanicon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1EDEF5172E90F70041F716 /* humanicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CA1EDED7172E87320041F716 /* GEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEViewController.h; sourceTree = "<group>"; };
 		CA1EDED8172E87320041F716 /* GEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEViewController.m; sourceTree = "<group>"; };
 		CA1EDEDB172E87320041F716 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GEViewController.xib; sourceTree = "<group>"; };
+		CA1EDEF5172E90F70041F716 /* humanicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		CA1EDEC6172E87320041F716 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA1EDEF5172E90F70041F716 /* humanicon.png */,
 				CA1EDEC7172E87320041F716 /* GestureExample-Info.plist */,
 				CA1EDEC8172E87320041F716 /* InfoPlist.strings */,
 				CA1EDECB172E87320041F716 /* main.m */,
@@ -164,6 +167,7 @@
 				CA1EDED4172E87320041F716 /* Default@2x.png in Resources */,
 				CA1EDED6172E87320041F716 /* Default-568h@2x.png in Resources */,
 				CA1EDEDC172E87320041F716 /* GEViewController.xib in Resources */,
+				CA1EDEF6172E90F70041F716 /* humanicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
